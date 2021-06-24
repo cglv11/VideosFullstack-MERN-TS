@@ -1,0 +1,25 @@
+GET http://localhost:5000/videos
+
+###
+GET http://localhost:5000/videos/60c80fc99b6a0318fcac0aca
+
+###
+POST http://localhost:5000/videos/
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=794Q71KVw1k",
+    "title": "fazt anoche",
+    "description": "this is a fazt video"
+}
+
+###
+PUT http://localhost:5000/videos/60c80fc99b6a0318fcac0aca
+Content-Type: application/json
+
+{
+    "description": "this is a fazt video of shit"
+}
+
+###
+DELETE http://localhost:5000/videos/60c8114741492c24e42f465f
